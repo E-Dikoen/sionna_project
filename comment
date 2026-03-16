@@ -1,0 +1,12 @@
+sionna/
+├── .gitignore              # 忽略文件配置
+├── README.md               # 项目主说明文档（包含分工、运行方法）
+├── docs/                   # 存放参考文献、公式推导、项目报告 (PDF/Markdown)
+├── src/                    # 源代码核心目录
+│   ├── siso_baseline/      # 你负责的 SISO 基础链路代码
+│   ├── ofdm_system/        # 子仪和诗钰的 OFDM 代码
+│   └── neural_network/     # 承泽和骏一的 AI/神经网络代码
+├── data/                   # 存放小型数据集或处理脚本（大文件建议放外链）
+│   └── raw/                # 原始数据
+├── scripts/                # 自动化运行、绘图等辅助脚本
+└── results/                # 存放仿真输出的图表、训练好的模型权重 (如 .pth)
