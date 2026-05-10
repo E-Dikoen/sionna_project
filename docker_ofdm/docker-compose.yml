@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  sionna-ofdm:
+    build:
+      context: ..
+      dockerfile: docker_ofdm/Dockerfile
+    image: sionna-ofdm:latest
+    container_name: sionna-ofdm
+    stdin_open: true
+    tty: true
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ..:/workspace/sionna_project
+    working_dir: /workspace/sionna_project
+    command: /bin/bash
