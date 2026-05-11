@@ -1,0 +1,21 @@
+system:
+  name: "sionna_simulation"
+  version: "0.1.0"
+
+simulation:
+  batch_size: 100
+  num_bits: 12000
+  ebno_dbs: [0, 2, 4, 6, 8, 10]
+
+modulation:
+  type: "qam"
+  num_bits_per_symbol: 4
+
+channel:
+  type: "awgn"
+  coderate: 1.0
+
+output:
+  save_results: true
+  plot: true
+  result_dir: "./results"
